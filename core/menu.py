@@ -1,6 +1,6 @@
-from ascii_image_converter import AsciiConverter
-from ascii_video_converter import AsciiVideoConverter
-
+from core.ascii_image_converter import AsciiConverter
+from core.ascii_video_converter import AsciiVideoConverter
+from core.menu_help import MenuHelp
 
 class Menu:
     """
@@ -19,7 +19,7 @@ class Menu:
                     "Выберете подходящий режим:\n"
                     "1. Конвертация изображения в ascii-рисунок\n"
                     "2. Конвертация видео в ascii-рисунок (в консоли)\n"
-                    "3. Меню помощь (в следующей версии)\n"
+                    "3. Меню помощь\n"
                     "4. Выйти из программы\n"
                     "Ваш выбор: "
                 )
@@ -31,6 +31,6 @@ class Menu:
                 case 2:
                     AsciiVideoConverter.ascii_video_converter()
                 case 3:
-                    ...
+                    MenuHelp.menu_help()
                 case 4:
                     break

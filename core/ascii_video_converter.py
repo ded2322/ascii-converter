@@ -1,12 +1,14 @@
 import cv2
 
 
+# BIG SHIT CODE
+# Примерный вид кода, если бы я писал пару лет назад
+# Текущий стиль в ascii_image_converter.py
 class AsciiVideoConverter:
     @classmethod
     def ascii_video_converter(cls):
         support_characters = " `.,-':<>;+!*/?%&98#"
         coef = 255 / (len(support_characters) - 1)
-
 
         file_path = input("Введите путь до видео: ")
         # Открываем видеофайл
